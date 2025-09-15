@@ -1,21 +1,32 @@
-# Cargo build files
-/target/
+# Ignore Cargo build artifacts everywhere
+**/target/
+
+# Executables and debug files (Windows)
+*.exe
+*.pdb
 
 # Cargo package backups
 **/*.rs.bk
 
-# IDE / editor specific files
+# Cargo-specific metadata
+**/.cargo/
+
+# If building a library, ignore Cargo.lock
+# For binaries, commit it
+# Cargo.lock
+
+# Rustfmt & Clippy configs
+rustfmt.toml
+.clippy.toml
+
+# IDE / editor configs
 .idea/
 .vscode/
 *.swp
 
-# OS generated files
+# OS-specific files
 .DS_Store
 Thumbs.db
 
 # Logs
 *.log
-
-# By default Cargo.lock is committed for binaries, but ignored for libraries
-# Uncomment if you're making a library
-# Cargo.lock
