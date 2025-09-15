@@ -1,0 +1,21 @@
+# Cargo build files
+/target/
+
+# Cargo package backups
+**/*.rs.bk
+
+# IDE / editor specific files
+.idea/
+.vscode/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# By default Cargo.lock is committed for binaries, but ignored for libraries
+# Uncomment if you're making a library
+# Cargo.lock
